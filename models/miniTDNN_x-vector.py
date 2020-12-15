@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Sat May 30 19:59:45 2020
-@author: krishna
-"""
 
 
 import torch.nn as nn
@@ -74,6 +70,5 @@ class X_vector(nn.Module):
         return predictions
 
 def MainModel(nOut=256, **kwargs):
-    # Number of filters
     model = X_vector(nOut, **kwargs)
     return model
